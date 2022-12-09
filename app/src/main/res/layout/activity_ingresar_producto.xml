@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresarProductoActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="38dp"
+        android:text="Crear Producto"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCodigoPro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="33dp"
+        android:text="Codigo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtCodigoPro"
+        app:layout_constraintEnd_toStartOf="@+id/txtCodigoPro"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCodigoPro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Digite Codigo de Producto"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="48dp"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/txtValorPro"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombrePro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoPro" />
+
+    <EditText
+        android:id="@+id/txtNombrePro"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Digite Nombre de Producto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtValorPro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoPro" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="Valor"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValorPro"
+        app:layout_constraintEnd_toStartOf="@+id/txtValorPro"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtValorPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Digite el Valor"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="42dp"
+        android:text="Cantidad"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrearPro"
+        app:layout_constraintEnd_toStartOf="@+id/txtCantidadPro"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorPro" />
+
+    <EditText
+        android:id="@+id/txtCantidadPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="Digite la Cantidad "
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btnCrearPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="24dp"
+        android:text="Crear"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresarCrearPro"
+        app:layout_constraintStart_toStartOf="@+id/btnRegresarCrearPro"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btnRegresarCrearPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:onClick="regresarIngrePro"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearPro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

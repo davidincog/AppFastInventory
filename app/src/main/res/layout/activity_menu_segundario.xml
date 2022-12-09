@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuSegundarioActivity">
+
+    <Button
+        android:id="@+id/btnIngresarProSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:onClick="ingresarProSeg"
+        android:text="Ingresar Producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerInven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        android:text="Ver Inventario"
+        app:layout_constraintStart_toStartOf="@+id/btnIngresarProSeg"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresarProSeg" />
+
+    <Button
+        android:id="@+id/btnRegresarMenSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:onClick="regresarMenuSeg"
+        android:text="Regresar"
+        app:layout_constraintStart_toStartOf="@+id/btnVerInven"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerInven" />
+</androidx.constraintlayout.widget.ConstraintLayout>
